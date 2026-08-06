@@ -17,4 +17,5 @@ public:
 
 private:
 	FDelegateHandle InventorySizeHookHandle;
+	FDelegateHandle InventoryResizeHookHandle;
 };
