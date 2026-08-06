@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Recipe.json",
+	"Name": "Mega Storage Container",
+	"Ingredients": [
+		{ "Item": "Desc_ModularFrameHeavy", "Amount": 20 },
+		{ "Item": "Desc_SteelPlateReinforced", "Amount": 30 },
+		{ "Item": "Desc_Wire", "Amount": 100 }
+	],
+	"Products": [
+		{ "Item": "Desc_StorageContainerMk2", "Amount": 1 }
+	],
+	"ManufacturingDuration": 4,
+	"ProducedIn": [ "BP_BuildGun" ],
+	"UnlockedBy": [ "Schematic_MegaStorage" ]
+}

@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+	"Name": "Mega Storage",
+	"Type": "Milestone",
+	"Tier": 3,
+	"MenuPriority": 50.0,
+	"Time": 60,
+	"Cost": [
+		{ "Item": "Desc_IronPlateReinforced", "Amount": 20 },
+		{ "Item": "Desc_Rotor", "Amount": 10 }
+	],
+	"Recipes": [
+		"Recipe_MegaStorage"
+	]
+}
