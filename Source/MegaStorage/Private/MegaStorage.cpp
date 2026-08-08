@@ -9,10 +9,14 @@ DEFINE_LOG_CATEGORY(LogMegaStorage);
 
 namespace
 {
-	// The target inventory grid for Mega Storage: 8 columns x 250 rows = 2000 slots.
-	// Matches the column width already used by other storage/inventory UI panels in-game.
-	constexpr int32 TargetInventorySizeX = 8;
-	constexpr int32 TargetInventorySizeY = 250;
+	// The target inventory grid for Mega Storage: 10 columns x 50 rows = 500 slots.
+	// A larger size (2000, 8x250) was tested and reliably stalled belt/lift input after a
+	// few hundred items despite the inventory itself never filling up -- some vanilla
+	// factory-input bookkeeping doesn't scale cleanly with a very large override. 500 was
+	// confirmed stable well past that failure point (~2000 items fed in continuously with
+	// no stall), so it's the safe ceiling for now.
+	constexpr int32 TargetInventorySizeX = 10;
+	constexpr int32 TargetInventorySizeY = 50;
 
 	// ContentLib names the generated recipe Blueprint class after the JSON file
 	// (Recipe_MegaStorage.json -> Recipe_MegaStorage_C). We match on the short class
